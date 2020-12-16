@@ -1,5 +1,5 @@
 # Link Shortener
-Link Shortener with using bitly.com API
+Link Shortener with using www.bitly.com API.
 
 I use the www.bitly.com API for shortening links. 
 'TOKEN' and 'group_guid' you can get after registration on the site www.bitly.com
