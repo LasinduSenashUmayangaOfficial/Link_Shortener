@@ -1,4 +1,4 @@
-# LinkShortener
+# Link Shortener
 Link Shortener with using bitly.com API
 
 I use the www.bitly.com API for shortening links. 
