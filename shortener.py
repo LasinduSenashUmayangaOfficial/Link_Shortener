@@ -35,7 +35,7 @@ def short(startLink):
     }
 
     data = '{"long_url": "xxx", "domain":"bit.ly", "group_guid": "{group_guid}"}'
-    data = data.replace("xxx", startLink) #replaing xxx in previous string on user input data  
+    data = data.replace("xxx", startLink) #replacing xxx in previous string on user input data  
     
     try:
         response = requests.post("https://api-ssl.bitly.com/v4/shorten", headers=headers, data=data)
