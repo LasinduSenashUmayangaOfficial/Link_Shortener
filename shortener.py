@@ -3,14 +3,18 @@ import json
 
 
 def linkInput():
-    """ Use for user input link to short """
+    """ 
+    Use for user input link to short 
+    """
     startLink = str(input("Enter your link for short: "))
     
     return startLink
 
 
 def checkInput(startLink):
-    """ Use for check user input and correct if need """
+    """ 
+    Use for check user input and correct if need 
+    """
     if "bitly.com" in startLink:
         print("Service can't short link cantained 'bitly.com' in any condition.")
         startLink = str(input("Enter your link for short: "))
@@ -22,7 +26,9 @@ def checkInput(startLink):
 
 
 def short(startLink):
-    """ TOKEN and group_guid you can get after register on bitly.com """
+    """ 
+    TOKEN and group_guid you can get after register on bitly.com 
+    """
     headers = {
         'Authorization': 'Bearer {TOKEN}',
         'Content-Type': 'application/json',
