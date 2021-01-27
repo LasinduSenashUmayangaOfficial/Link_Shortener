@@ -45,7 +45,7 @@ def short(startLink):
         print(ke)
     except UnicodeEncodeError as ue:
         print(ue)
-    
-startLink = checkInput(linkInput())
 
-print(f"Your shorten link is - {short(startLink)}")
+if __name__ == "__main__":
+    startLink = checkInput(linkInput())
+    print(f"Your shorten link is - {short(startLink)}")
