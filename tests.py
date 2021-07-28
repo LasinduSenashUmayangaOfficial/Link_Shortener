@@ -5,7 +5,7 @@ from shortener import linkInput, checkInput, short
 
 class PasswordsTestCase(unittest.TestCase):
 
-    def linkInput(self):
+    def test_linkInput(self):
         user_input = ["www.google.com/"]
         expected_input = "www.google.com/"
         with patch('builtins.input', side_effect=user_input):
