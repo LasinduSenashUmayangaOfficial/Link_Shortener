@@ -15,7 +15,7 @@ class PasswordsTestCase(unittest.TestCase):
     def test_checkInput(startLink):
         assert checkInput("www.google.com") == "http://www.google.com"
 
-    def test_short(startLink):
+    def test_short(self):
         assert short(startLink='http://www.google.com')[:15] == "https://bit.ly/"
 
 
