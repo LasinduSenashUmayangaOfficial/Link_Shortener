@@ -1,6 +1,8 @@
 import requests
 import json
 
+TOKEN = #TOKEN you can get after register on bitly.com 
+GROUP_GIUD = #group_guid you can get after register on bitly.com 
 
 def linkInput():
     """ 
@@ -34,7 +36,7 @@ def short(startLink):
         'Content-Type': 'application/json',
     }
 
-    data = '{"long_url": "xxx", "domain":"bit.ly", "group_guid": "{group_guid}"}'
+    data = '{"long_url": "xxx", "domain":"bit.ly", "group_guid": "{GROUP_GIUD}"}'
     data = data.replace("xxx", startLink) #replacing xxx in previous string on user input data  
     
     try:
